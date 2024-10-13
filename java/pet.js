@@ -58,7 +58,7 @@ const loadPets =async()=>{
 
 const displaytPets =(pets) =>{
     const petContainer = document.getElementById('pet-container')
-    petContainer.innerHTML = ''
+    petContainer.innerHTML = ""
 
     if (pets.length === 0) {
         petContainer.classList.remove("grid")
@@ -77,6 +77,7 @@ const displaytPets =(pets) =>{
         return;
     }
     pets.forEach((pet)=>{
+        petContainer.classList.add("grid")
         console.log(pet);
         const div = document.createElement('div')
         const {image, pet_name,breed,date_of_birth,gender,price,petId} = pet

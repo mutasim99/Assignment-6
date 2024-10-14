@@ -132,6 +132,7 @@ const showModal = async(petId) =>{
     const displaydateOfbirth = date_of_birth ? date_of_birth : "27-07-2020"
     const displayBreed = breed ? breed : ''
     const displayPrice = price ? price : '250$'
+    const vaccinatedStatus = vaccinated_status ? vaccinated_status : 'fully'
     modalContainer.innerHTML =`
         <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
             <div class="modal-box">
@@ -149,7 +150,7 @@ const showModal = async(petId) =>{
                         </div>
                         <div class="flex mb-1 gap-0.5 items-center">
                             <img class="w-6" src="https://img.icons8.com/?size=64&id=OAEgiuFMPnId&format=png">
-                            <p class="text-[#131313]">Vaccinated status : ${vaccinated_status}</p>
+                            <p class="text-[#131313]">Vaccinated status : ${vaccinatedStatus}</p>
                         </div>
                         
                     </div>
